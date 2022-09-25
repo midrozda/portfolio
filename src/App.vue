@@ -10,10 +10,10 @@ import { RouterView, RouterLink } from "vue-router";
 
     <div id="rightBar">
       <nav>
-        <RouterLink to="/">About me</RouterLink>
-        <RouterLink to="/resume"><span>Resume</span></RouterLink>
-        <RouterLink to="/projects"><span>Projects</span></RouterLink>
-        <RouterLink to="/contact"><span>Contact</span></RouterLink>
+        <RouterLink to="/portfolio">About me</RouterLink>
+        <RouterLink to="/portfolio/resume"><span>Resume</span></RouterLink>
+        <RouterLink to="/portfolio/projects"><span>Projects</span></RouterLink>
+        <RouterLink to="/portfolio/contact"><span>Contact</span></RouterLink>
       </nav>
     </div>
   </header>
