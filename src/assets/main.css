@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Syne";
+    src: local("Syne"),
+    url(./fonts/syne/Syne-VariableFont_wght.ttf) format("truetype");
+}
+body {
+    margin: 0;
+    color: #1B1B1B;
+}
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
