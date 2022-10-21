@@ -1,15 +1,13 @@
 <script setup>
 import ExperienceEntry from "../components/ExperienceEntry.vue";
+import TabThemeExtended from "../components/TabThemeExtended.vue";
 </script>
 
 <template>
-  <div class="image">
-    <span class="title">📃 Resume</span>
-  </div>
-  <div id="ResumeContent">
-    <div id="resumeBar">
-      <span class="resumeItem">Experience</span>
-      <span class="resumeItem downloadResumeButton">Download resume</span>
+  <TabThemeExtended icon="📃" title="Resume">
+    <div class="resumeBar">
+      <span class="resumeItem" style="margin-top: 0;">Experience</span>
+      <span class="downloadResumeButton">Download resume</span>
     </div>
     <div class="experienceEntries">
       <ExperienceEntry
@@ -68,7 +66,7 @@ import ExperienceEntry from "../components/ExperienceEntry.vue";
       </ExperienceEntry>
     </div>
 
-    <div id="resumeBar">
+    <div class="resumeBar">
       <span class="resumeItem">Skills</span>
     </div>
     <p>
@@ -79,7 +77,7 @@ import ExperienceEntry from "../components/ExperienceEntry.vue";
     <p style="margin-top: 26px">
       Languages: Polish (native), English (C1), German (B1), Mandarin (HSK2)
     </p>
-    <div id="resumeBar">
+    <div class="resumeBar">
       <span class="resumeItem">Education</span>
     </div>
 
@@ -90,17 +88,24 @@ import ExperienceEntry from "../components/ExperienceEntry.vue";
       max-description-width=0
     >
     </ExperienceEntry>
-    <div id="resumeBar">
+    <div class="resumeBar">
       <span class="resumeItem">Interests</span>
     </div>
     <span class="baseText"
       >I’m interested in topics related to design, psychology, and tech but also
       in learning new languages</span
     >
-  </div>
+  </TabThemeExtended>
 </template>
 
 <style>
+div {
+  font-family: "Questrial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+}
 .image {
   background-image: url("@/assets/background.svg");
   width: 100vw;
@@ -131,7 +136,7 @@ import ExperienceEntry from "../components/ExperienceEntry.vue";
   position: relative;
   background: white;
 }
-#resumeBar {
+.resumeBar {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -151,15 +156,16 @@ import ExperienceEntry from "../components/ExperienceEntry.vue";
 }
 
 .downloadResumeButton {
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
   padding: 4px 16px;
   border: 2px solid #170df2;
+  color: #170df2;
   border-radius: 0 4px 0 4px;
+  text-align: center;
 }
 .baseText {
-  font-family: "Questrial";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 25px;
 }
 </style>

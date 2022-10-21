@@ -1,8 +1,8 @@
 <script setup>
+import TabThemeExtended from "../components/TabThemeExtended.vue";
 </script>
 
 <template>
-  <main>
-    <span>Contact</span>
-  </main>
+  <TabThemeExtended icon="📕" title="Contact">
+  </TabThemeExtended>
 </template>

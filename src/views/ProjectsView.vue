@@ -1,8 +1,10 @@
 <script setup>
+import TabTheme from "../components/TabTheme.vue";
+import ProjectCard from "../components/ProjectCard.vue";
 </script>
 
 <template>
-  <main>
-    <span>Projects</span>
-  </main>
+  <TabTheme icon="📑" title="Projects">
+    <ProjectCard></ProjectCard>
+  </TabTheme>
 </template>
