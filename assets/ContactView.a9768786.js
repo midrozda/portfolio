@@ -1,0 +1,1 @@
+import{_ as t}from"./TabThemeExtended.492e4f57.js";import{o,b as a}from"./index.6372243d.js";import"./TabTheme.82c69ef6.js";const i={__name:"ContactView",setup(c){return(e,r)=>(o(),a(t,{icon:"\u{1F4D5}",title:"Contact"}))}};export{i as default};

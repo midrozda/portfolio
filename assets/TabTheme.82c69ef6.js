@@ -1,0 +1,1 @@
+import{_ as o,o as n,c,a as t,t as s,r as _,F as r}from"./index.6372243d.js";const i={props:["title","icon"]},l={class:"image"},d={class:"title"};function p(a,m,e,u,f,h){return n(),c(r,null,[t("div",l,[t("span",d,s(e.icon)+" \u2014 "+s(e.title),1)]),_(a.$slots,"default")],64)}const g=o(i,[["render",p]]);export{g as T};
